@@ -14,6 +14,8 @@ export class SearchParam {
 	readonly DECIMETRE_TO_FT = 3.048;
 	// Divide hectogram by this value to get pounds
 	readonly HECTOGRAM_TO_LB = 4.536;
+	// Threshold for available 3D images
+	readonly THRESHOLD_3D_IMG = 640;
   readonly NAME_URL = "https://pokeapi.co/api/v2/pokemon/";
   readonly COLOUR_URL = "https://pokeapi.co/api/v2/pokemon-color/";
 	readonly SPECIES_URL = "https://pokeapi.co/api/v2/pokemon-species/";
@@ -44,7 +46,7 @@ export class SearchParam {
 		
 		/* Check if id is larger than 640.  If it is, return spriteUrl as imgUrl.
 			 3D Rendered images only available for Pokemon No. 1 - 640. */
-		if (id > 640) imgUrl = spriteUrl;
+		if (id > this.THRESHOLD_3D_IMG) imgUrl = spriteUrl;
 
 		//TYPE
     for (let pType of pokemonData.types) {

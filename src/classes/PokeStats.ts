@@ -28,6 +28,8 @@ export enum PokeType {
  * Represent Pokemon's Pokedex stats.
  */
 export class PokeStats {
+	// Threshold for available 3D images
+	readonly THRESHOLD_3D_IMG = 640;
   // DOM Reference to Pokedex entry fields
   readonly displayPokeNumber = document.getElementById(
     "display-poke-number"
@@ -101,6 +103,7 @@ export class PokeStats {
     this.displayPokeImg.src = this.imgUrl;
 		this.displayPokeSprite.src = this.spriteUrl;
 		this.renderPokeType();
+		this.positionImage();
   }
 
 	/**
@@ -120,6 +123,16 @@ export class PokeStats {
     } else {
       throw "Invalid pokeTypeUrl array length in PokeStats";
     }
+	}
+
+	private positionImage(): void {
+		if(this.pokeNumber > this.THRESHOLD_3D_IMG) {
+			this.displayPokeImg.style.paddingTop = '12vh';
+			this.displayPokeImg.style.paddingLeft = '5vh';
+		} else {
+			this.displayPokeImg.style.paddingTop = '0';
+			this.displayPokeImg.style.paddingLeft = '0';
+		}
 	}
 
 	/**
