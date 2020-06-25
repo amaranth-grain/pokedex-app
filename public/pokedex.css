@@ -1,0 +1,173 @@
+body {
+  font-size: 1.2em;
+	background-color: #f1f1f1;
+	overflow-x: hidden;
+	margin-bottom: 3em;
+}
+/* FONTS */
+@font-face {
+  font-family: pokemon-font;
+  src: url('./fonts/pokemon-font.ttf');
+}
+@font-face {
+  font-family: pokemon-game-font;
+  src: url('./fonts/pokemon-game-font.ttf');
+}
+@font-face {
+  font-family: pokepics;
+  src: url('./fonts/pokepics1..ttf');
+}
+/* FONTS END */
+.brand-logo {
+	font-family: pokemon-font;
+}
+h1, h2, h3 {
+	font-family: pokemon-game-font;
+}
+.pokedex-btn {
+	margin-top: 2em;
+	font-size: 1.4em;
+	color: white;
+	font-weight: bold;
+}
+.welcome {
+	letter-spacing: 0.05em;
+}
+#welcome-top {
+	/* color: #ffcb05; */
+	margin-top: 6vh;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+/* #welcome-bottom {
+	color: #2a75bb;
+} */
+.error-msg {
+	visibility: hidden;
+}
+.pokepic {
+	padding: 0 0.4em;
+	margin-top: 0.75em;
+	font-family: pokepics;
+	font-size: 6vw;
+}
+.test {
+	border: 1px solid black;
+}
+.entry {
+	background-color: #fa7549;
+	margin-top: .5em;
+	padding: 2em 0;
+	border-radius: 1em;
+}
+.poke-bar {
+  line-height: 2.5em;
+  background-color: #f25d0c;
+  color: white;
+  padding-right: 0 !important;
+}
+.poke-img  {
+	padding-top: 0.1em;
+  position: absolute;
+  clip: rect(10px,60px,200px,0px);
+}
+.poke-number span {
+	padding-left: 2.2em !important;
+}
+.poke-name {
+  background-color: black;
+  padding-left: 2em !important;
+  -webkit-clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.poke-stats {
+	font-weight: bold;
+	padding: 0 !important;
+}
+.stats-header {
+	background-color: #dbdbdb;
+	line-height: 2.5em;
+	border-bottom: 3px solid #fa7549;
+}
+.table-row {
+	line-height: 2.5em;
+	display: flex;
+}
+.table-body-cell {
+	background-color: #dbdbdb;
+	flex-grow: 1;
+	flex-basis: 0;
+	border-bottom: 2px solid #cfcfcf;
+}
+.right-cell {
+	background-color: white;
+}
+.stats-desc {
+	padding: 1.6em 1em;
+	border-top: 3px solid #fa7549;
+	background-color: white;
+}
+.poke-type-div {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 1vh 2vh;
+	background-color: #545357;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 0.3em;
+}
+.poke-type {
+	vertical-align: middle;
+	padding-bottom: 0.2em;
+}
+.btn-search {
+	display: none;
+}
+.dropdown {
+	display: none;
+}
+.capitalise {
+	text-transform: capitalize;
+}
+#splash {
+	margin-top: 5vh;
+}
+#type02 {
+	display: none;
+}
+#psyduck {
+	color: #e6a452;
+}
+#bulbasaur {
+	color: #399494;
+}
+#charmander {
+	color: #ff9441;
+}
+#squirtle {
+	color: #5a9ca4;
+}
+#pikachu {
+	color: #f6bd20;
+}
+#meowth {
+	color: #8b6a00;
+}
+#vulpix {
+	color: #bd4a29;
+}
+#jigglypuff {
+	color: #e67383;
+}
+#diglett {
+	color: #a45a5a;
+}
+#oddish {
+	color: #8bac31;
+}
+#wartortle {
+	color: #627bc5;
+}
+#parasect {
+	color: #e6a452;
+}
