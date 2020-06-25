@@ -93,7 +93,7 @@ export class PokeStats {
   populate(): void {
     this.displayPokeNumber.textContent = `# ${this.pokeNumber.toString()}`;
     this.displayPokeName.textContent = this.name;
-    this.displayPokeHeight.textContent = `${this.height.toString()}'`;
+    this.displayPokeHeight.textContent = `${this.height.toString()} ft`;
     this.displayPokeWeight.textContent = `${this.weight.toString()} lbs`;
     this.displayPokeBattles.textContent = getRandomInt(10).toString();
     this.displayPokeDesc.textContent = this.desc;

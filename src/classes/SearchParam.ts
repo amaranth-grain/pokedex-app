@@ -35,7 +35,7 @@ export class SearchParam {
     // ATTRIBUTES
     let pokeType: string[] = [];
 		let { id, height, weight, name } = pokemonData;
-		height = Math.floor(height / this.DECIMETRE_TO_FT);
+		height = Math.round(height / this.DECIMETRE_TO_FT * 10 ) / 10;
 		weight = Math.round((weight / this.HECTOGRAM_TO_LB) * 10) / 10;
     let desc: string = "placeholder desc";
     let genus: string = "placeholder genus";
