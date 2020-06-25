@@ -12,7 +12,7 @@ if (form) {
 		values = [keyword.value.toLowerCase(), option];
 	
 		const searchParams = new SearchParam(...values);
-	
+		keyword.value = '';
 		searchParams.getStats().then(pokeStats => {
 			if (pokeStats) pokeStats.populate();
 		});	

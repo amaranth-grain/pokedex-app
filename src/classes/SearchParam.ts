@@ -108,7 +108,7 @@ export class SearchParam {
 	
 	private renderErrorMsg(): void {
 		this.errorMsg.style.visibility = 'visible';
-		this.errorMsg.textContent = 'This Pokemon / Poke No. does not exist. Please try again.';
+		this.errorMsg.textContent = `Pokemon ${this.keyword.toUpperCase()} does not exist. Please try again.`;
 	}
 
   /**

@@ -55,7 +55,9 @@ h1, h2, h3 {
 	border: 1px solid black;
 }
 .entry {
-	background-color: #fa7549;
+	/* background-color: #fa7549; */
+	background-image: url('./img/pokedex-bg.png');
+	background-size: container;
 	margin-top: .5em;
 	padding: 2em 0;
 	border-radius: 1em;
@@ -130,6 +132,10 @@ h1, h2, h3 {
 }
 .capitalise {
 	text-transform: capitalize;
+}
+#pokeball-icon {
+	padding-top: 0.3em;
+	float: right;
 }
 #splash {
 	margin-top: 5vh;

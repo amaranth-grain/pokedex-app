@@ -1,3 +1,5 @@
+import { getRandomInt } from '../functions';
+
 /**
  * All Pokemon Types.
  * Enum values follow PokeAPI type values.
@@ -93,7 +95,7 @@ export class PokeStats {
     this.displayPokeName.textContent = this.name;
     this.displayPokeHeight.textContent = `${this.height.toString()}'`;
     this.displayPokeWeight.textContent = `${this.weight.toString()} lbs`;
-    // this.displayPokeBattles.textContent = getRandomInt(10).toString();
+    this.displayPokeBattles.textContent = getRandomInt(10).toString();
     this.displayPokeDesc.textContent = this.desc;
     this.displayPokeGenus.textContent = this.genus;
     this.displayPokeImg.src = this.imgUrl;
