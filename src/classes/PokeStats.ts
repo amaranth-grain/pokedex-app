@@ -131,7 +131,7 @@ export class PokeStats {
 			this.displayPokeImg.style.paddingLeft = '5vh';
 		} else {
 			this.displayPokeImg.style.paddingTop = '0';
-			this.displayPokeImg.style.paddingLeft = '0';
+			this.displayPokeImg.style.paddingLeft = '5vh';
 		}
 	}
 
