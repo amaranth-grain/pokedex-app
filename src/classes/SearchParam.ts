@@ -35,12 +35,16 @@ export class SearchParam {
     // ATTRIBUTES
     let pokeType: string[] = [];
 		let { id, height, weight, name } = pokemonData;
-		height = Math.round((height / this.DECIMETRE_TO_FT) * 10) / 10;
+		height = Math.floor(height / this.DECIMETRE_TO_FT);
 		weight = Math.round((weight / this.HECTOGRAM_TO_LB) * 10) / 10;
     let desc: string = "placeholder desc";
     let genus: string = "placeholder genus";
     let spriteUrl: string = pokemonData.sprites.front_default;
-    let pokeTypeUrl: string[] = [];
+		let pokeTypeUrl: string[] = [];
+		
+		/* Check if id is larger than 640.  If it is, return spriteUrl as imgUrl.
+			 3D Rendered images only available for Pokemon No. 1 - 640. */
+		if (id > 640) imgUrl = spriteUrl;
 
 		//TYPE
     for (let pType of pokemonData.types) {
