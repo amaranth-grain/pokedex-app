@@ -9,7 +9,7 @@ if (form) {
 		e.preventDefault();
 		let option: number = parseInt(searchOption.value);
 		let values: [string, number];
-		values = [keyword.value, option];
+		values = [keyword.value.toLowerCase(), option];
 	
 		const searchParams = new SearchParam(...values);
 	

@@ -120,8 +120,10 @@ h1, h2, h3 {
 	vertical-align: middle;
 	padding-bottom: 0.2em;
 }
+/* Button search cannot be hidden for Safari compatibility */
 .btn-search {
-	display: none;
+	position: absolute;
+	left: -9999px;
 }
 .dropdown {
 	display: none;
