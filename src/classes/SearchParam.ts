@@ -50,7 +50,7 @@ export class SearchParam {
 		desc = speciesData.flavor_text_entries[0].flavor_text;
 		genus = speciesData.genera[7].genus;
 		pokeType.forEach(pType => {
-			pokeTypeUrl.push(`./img/${pType}.png`)
+			pokeTypeUrl.push(`./public/img/${pType}.png`)
 		})
 
     return new PokeStats(
