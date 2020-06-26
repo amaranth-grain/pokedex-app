@@ -21,6 +21,9 @@ body {
 .brand-logo {
 	font-family: pokemon-font;
 }
+footer {
+	padding-top: 1em;
+}
 h1, h2, h3 {
 	font-family: pokemon-game-font;
 }
